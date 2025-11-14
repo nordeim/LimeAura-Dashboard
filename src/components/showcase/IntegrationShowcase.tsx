@@ -1,3 +1,5 @@
+'use client';
+
 // src/components/showcase/IntegrationShowcase.tsx
 import { Card } from '@/components/ui/Card/Card';
 import { IntegrationRow } from '@/components/ui/Integration/IntegrationRow';

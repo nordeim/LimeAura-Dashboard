@@ -7,17 +7,46 @@ $ npm run build
 
    Creating an optimized production build ...
  ✓ Compiled successfully
-   Linting and checking validity of types  ...Failed to compile.
+ ✓ Linting and checking validity of types    
+ ✓ Collecting page data    
+ ✓ Generating static pages (5/5)
+ ✓ Collecting build traces    
+ ✓ Finalizing page optimization    
 
-./src/components/ui/Avatar/Avatar.tsx:3:13
-Type error: Import declaration conflicts with local declaration of 'Avatar'.
+Route (app)                              Size     First Load JS
+┌ ○ /                                    14.8 kB         102 kB
+└ ○ /_not-found                          873 B          88.1 kB
++ First Load JS shared by all            87.2 kB
+  ├ chunks/117-629b9c8cf41dde21.js       31.7 kB
+  ├ chunks/fd9d1056-38967cbf7ee29e57.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
 
-  1 | 'use client';
-  2 |
-> 3 | import * as Avatar from '@radix-ui/react-avatar';
-    |             ^
-  4 | import { cn } from '@/lib/utils';
-  5 |
-  6 | interface AvatarProps {
-Next.js build worker exited with code: 1 and signal: null
 
+○  (Static)  prerendered as static content
+
+$ npm run dev
+
+> limeaura-styleguide@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+  ▲ Next.js 14.2.33
+  - Local:        http://localhost:3001
+
+ ✓ Starting...
+ ✓ Ready in 1791ms
+ ○ Compiling / ...
+ ✓ Compiled / in 4.9s (602 modules)
+ ✓ Compiled in 616ms (275 modules)
+ GET / 200 in 5633ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 2.7s (359 modules)
+ GET /favicon.ico 200 in 2805ms
+ GET / 200 in 241ms
+ GET /favicon.ico 200 in 9ms
+ ⚠ Cross origin request detected from 192.168.2.132 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 92ms
+ GET /favicon.ico 200 in 8ms
+ GET / 200 in 93ms
+ GET /favicon.ico 200 in 7ms

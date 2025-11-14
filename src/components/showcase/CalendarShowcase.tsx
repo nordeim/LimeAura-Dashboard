@@ -1,3 +1,5 @@
+'use client';
+
 // src/components/showcase/CalendarShowcase.tsx
 import { Card } from '@/components/ui/Card/Card';
 import { Calendar } from '@/components/ui/Calendar/Calendar';

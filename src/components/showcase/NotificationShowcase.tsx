@@ -1,3 +1,5 @@
+'use client';
+
 // src/components/showcase/NotificationShowcase.tsx
 import { Card } from '@/components/ui/Card/Card';
 import { NotificationItem } from '@/components/ui/Notification/NotificationItem';

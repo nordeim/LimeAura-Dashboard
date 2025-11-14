@@ -1,3 +1,5 @@
+'use client';
+
 // src/components/showcase/ToggleShowcase.tsx
 import { Card } from '@/components/ui/Card/Card';
 import { Toggle } from '@/components/ui/Toggle/Toggle';

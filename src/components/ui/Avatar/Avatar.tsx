@@ -1,6 +1,6 @@
 'use client';
 
-import * as Avatar from '@radix-ui/react-avatar';
+import * as AvatarPrimitive from '@radix-ui/react-avatar';
 import { cn } from '@/lib/utils';
 
 interface AvatarProps {
@@ -25,7 +25,7 @@ export function Avatar({
   };
   
   return (
-    <Avatar.Root 
+    <AvatarPrimitive.Root 
       className={cn(
         'inline-flex items-center justify-center overflow-hidden rounded-full bg-[var(--surface-soft)] border-2 border-[var(--surface-primary)]',
         sizeClasses[size],
@@ -33,19 +33,19 @@ export function Avatar({
       )}
     >
       {src ? (
-        <Avatar.Image
+        <AvatarPrimitive.Image
           src={src}
           alt={alt}
           className="h-full w-full object-cover"
         />
       ) : (
-        <Avatar.Fallback 
+        <AvatarPrimitive.Fallback 
           className="text-[var(--text-primary)] font-medium flex items-center justify-center h-full w-full"
           delayMs={600}
         >
           {fallback}
-        </Avatar.Fallback>
+        </AvatarPrimitive.Fallback>
       )}
-    </Avatar.Root>
+    </AvatarPrimitive.Root>
   );
 }
