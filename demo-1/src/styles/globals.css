@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Color Tokens */
+    --color-bg-main: 214, 242, 95;
+    --color-surface-primary: 255, 255, 255;
+    --color-surface-soft: 249, 250, 251;
+    --color-text-primary: 17, 17, 17;
+    --color-text-secondary: 85, 85, 85;
+    --color-text-muted: 156, 163, 175;
+    --color-accent-primary: 123, 62, 255;
+    --color-accent-primary-soft: 237, 231, 255;
+    --color-accent-secondary: 0, 198, 174;
+    --color-accent-yellow: 255, 176, 32;
+    --color-border-subtle: 240, 240, 240;
+    --color-semantic-success: 16, 185, 129;
+    --color-semantic-warning: 251, 191, 36;
+    --color-semantic-danger: 239, 68, 68;
+    
+    /* Spacing Tokens */
+    --spacing-xxs: 4px;
+    --spacing-xs: 6px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-xxl: 24px;
+    --spacing-xxxl: 32px;
+    
+    /* Radius Tokens */
+    --radius-pill: 999px;
+    --radius-card-lg: 28px;
+    --radius-card-md: 20px;
+    
+    /* Size Tokens */
+    --size-icon-sm: 16px;
+    --size-icon-md: 20px;
+    --size-icon-lg: 24px;
+    --size-avatar-sm: 32px;
+    --size-avatar-md: 36px;
+    --size-avatar-lg: 64px;
+  }
+  
+  * {
+    @apply border-border-subtle;
+  }
+  
+  body {
+    @apply bg-bg-main text-text-primary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .shadow-card-hover {
+    box-shadow: 0 14px 30px 0 rgba(15, 23, 42, 0.10);
+  }
+  
+  .transform-hover {
+    transform: translateY(-1px);
+  }
+}
