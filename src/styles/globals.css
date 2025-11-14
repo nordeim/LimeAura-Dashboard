@@ -1,0 +1,52 @@
+// src/styles/globals.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Design System Colors */
+    --background-main: #D6F25F;
+    --surface-primary: #FFFFFF;
+    --surface-soft: #F9FAFB;
+    --text-primary: #111111;
+    --text-secondary: #555555;
+    --text-muted: #9CA3AF;
+    --accent-primary: #7B3EFF;
+    --accent-primary-soft: #EDE7FF;
+    --accent-secondary: #00C6AE;
+    --accent-yellow: #FFB020;
+    --border-subtle: #F0F0F0;
+    --success: #10B981;
+    --warning: #FBBF24;
+    --danger: #EF4444;
+    
+    /* Radii Scale */
+    --radius-pill: 999px;
+    --radius-card-large: 28px;
+    --radius-card-medium: 20px;
+    
+    /* Shadows */
+    --shadow-card: 0 10px 25px 0 rgba(15, 23, 42, 0.06);
+    --shadow-floating: 0 18px 40px 0 rgba(15, 23, 42, 0.10);
+    --shadow-hover: 0 14px 30px 0 rgba(15, 23, 42, 0.10);
+    
+    /* Typography */
+    --font-primary: 'SF Pro Rounded', 'Nunito', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  body {
+    background-color: var(--background-main);
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}

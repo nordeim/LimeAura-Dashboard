@@ -1,0 +1,23 @@
+$ npm run build
+
+> limeaura-styleguide@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.33
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types  ...Failed to compile.
+
+./src/components/ui/Avatar/Avatar.tsx:3:13
+Type error: Import declaration conflicts with local declaration of 'Avatar'.
+
+  1 | 'use client';
+  2 |
+> 3 | import * as Avatar from '@radix-ui/react-avatar';
+    |             ^
+  4 | import { cn } from '@/lib/utils';
+  5 |
+  6 | interface AvatarProps {
+Next.js build worker exited with code: 1 and signal: null
+
